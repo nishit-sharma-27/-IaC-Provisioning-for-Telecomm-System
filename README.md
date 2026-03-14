@@ -47,26 +47,18 @@ Objectives
 
 🔹 Efficiency: Reduce setup time and operational overhead.
 
-Proposed Tech Stack (Flexible)
--------------------------------------------------------------------------------
-     Category	                    Tools/Technologies Used
-     
-IaC & Orchestration	      -     Terraform, Kubernetes (K8s), Docker
 
+##  Tech Stack
 
-CI/CD & Automation	      -     GitHub Actions, Git
+| Category | Tools/Technologies Used |
+| :--- | :--- |
+| **IaC & Orchestration** | Terraform, Kubernetes (K8s), Docker |
+| **CI/CD & Automation** | GitHub Actions, Git |
+| **Backend (Control Plane)** | Node.js, Express.js |
+| **Database & Auth** | MongoDB (Mongoose), JWT, Bcrypt |
+| **Frontend/Templating** | EJS (Embedded JavaScript) |
+| **Environment Mgmt** | Dotenv, Cookie-parser, Multer |
 
-
-Backend (Control Plane)	 -     Node.js, Express.js
-
-
-Database & Auth	      -     MongoDB(Mongoose), JWT, Bcrypt
-
-
-Frontend/Templating	      -     EJS (Embedded JavaScript)
-
-
-Environment Mgmt	      -     Dotenv, Cookie-parser, Multer
 
 
 
@@ -93,6 +85,33 @@ Cloud-based infrastructure provisioning
 Automatically installs required tools and services without manual intervention.
 
 🔹 Scalable Environment
+
+Infrastructure can be scaled horizontally as telecom demand increases.
+
+High-Level Workflow
+---------------------------------------
+Developer Push → Git Repository
+
+        ↓
+        
+CI/CD Pipeline Triggered
+
+        ↓
+        
+IaC Script Execution
+
+        ↓
+        
+Provision Infrastructure (Local/Cloud)
+
+        ↓
+        
+Deploy Telecom Services
+
+        ↓
+        
+System Ready for Use
+
 
 Expected Benefits
 ---------------------------------------------------------------------------
